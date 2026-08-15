@@ -1,0 +1,231 @@
+/*=========================================
+PAGE BANNER
+=========================================*/
+
+.page-banner{
+
+    padding:140px 0 80px;
+
+    background:linear-gradient(135deg,#7B1113,#A61C1C);
+
+    color:#fff;
+
+    text-align:center;
+
+}
+
+.page-banner h1{
+
+    font-size:52px;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+}
+
+.page-banner p{
+
+    font-size:18px;
+
+    opacity:.9;
+
+}
+
+
+/*=========================================
+EVENTS
+=========================================*/
+
+.events-section{
+
+    padding:90px 0;
+
+    background:#f8f9fc;
+
+}
+
+.events-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+    gap:35px;
+
+    margin-top:50px;
+
+}
+
+.event-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.event-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.15);
+
+}
+
+.event-image{
+
+    position:relative;
+
+    height:240px;
+
+    overflow:hidden;
+
+}
+
+.event-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.event-card:hover .event-image img{
+
+    transform:scale(1.08);
+
+}
+
+.event-date{
+
+    position:absolute;
+
+    top:20px;
+
+    left:20px;
+
+    background:#7B1113;
+
+    color:#fff;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    font-weight:700;
+
+    font-size:14px;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.2);
+
+}
+
+.event-content{
+
+    padding:28px;
+
+}
+
+.event-content h3{
+
+    font-size:28px;
+
+    margin-bottom:18px;
+
+    color:#1b2235;
+
+}
+
+.event-content p{
+
+    color:#666;
+
+    line-height:28px;
+
+    margin-bottom:12px;
+
+}
+
+.event-content .btn-primary{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+}
+
+
+/*=========================================
+RESPONSIVE
+=========================================*/
+
+@media(max-width:992px){
+
+    .page-banner{
+
+        padding:120px 20px 70px;
+
+    }
+
+    .page-banner h1{
+
+        font-size:42px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .events-section{
+
+        padding:70px 20px;
+
+    }
+
+    .events-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .event-content h3{
+
+        font-size:24px;
+
+    }
+
+    .page-banner h1{
+
+        font-size:34px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .event-image{
+
+        height:220px;
+
+    }
+
+    .event-content{
+
+        padding:22px;
+
+    }
+
+}

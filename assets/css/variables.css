@@ -1,0 +1,37 @@
+:root{
+
+    /* Brand Colors */
+
+    --primary:#0D47A1;
+
+    --secondary:#C62828;
+
+    --accent:#2E7D32;
+
+    --warning:#F9A825;
+
+    /* Neutral */
+
+    --white:#ffffff;
+
+    --light:#F5F7FA;
+
+    --dark:#1F2937;
+
+    --text:#374151;
+
+    --border:#E5E7EB;
+
+    /* Layout */
+
+    --container:1280px;
+
+    --radius:12px;
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+    /* Navbar */
+
+    --nav-height:80px;
+
+}

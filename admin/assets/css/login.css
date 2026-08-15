@@ -1,0 +1,223 @@
+/*=========================================
+LOGIN VARIABLES
+=========================================*/
+
+:root{
+
+    --primary:#7B1113;
+    --primary-dark:#5f0c0e;
+    --secondary:#1e3a8a;
+
+    --white:#ffffff;
+
+    --text:#222;
+    --text-light:#777;
+
+    --border:#e5e7eb;
+
+}
+
+/*=========================================
+BACKGROUND
+=========================================*/
+
+.login-wrapper{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+    position:relative;
+
+    padding:30px;
+
+    background:
+    linear-gradient(rgba(123,17,19,.82),rgba(30,58,138,.82)),
+    url("/srs/assets/images/hero/school.jpeg");
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+/* Floating Background */
+
+.login-wrapper::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:520px;
+    height:520px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:50%;
+
+    top:-180px;
+    left:-180px;
+
+    animation:floatOne 10s ease-in-out infinite;
+
+}
+
+.login-wrapper::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+    height:420px;
+
+    background:rgba(255,255,255,.06);
+
+    border-radius:50%;
+
+    right:-120px;
+    bottom:-120px;
+
+    animation:floatTwo 12s ease-in-out infinite;
+
+}
+
+/*=========================================
+LOGIN CARD
+=========================================*/
+
+.login-card{
+
+    width:430px;
+
+    position:relative;
+
+    z-index:2;
+
+    background:rgba(255,255,255,.96);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:24px;
+
+    padding:45px;
+
+    box-shadow:
+
+    0 25px 80px rgba(0,0,0,.25);
+
+    animation:cardUp .7s ease;
+
+}
+
+.otp-timer{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:6px;
+
+    margin:18px 0 22px;
+
+    font-size:14px;
+
+    color:#666;
+
+}
+
+#otpTimer{
+
+    color:#7B1113;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+.password-wrapper{
+
+    position:relative;
+
+}
+
+.password-wrapper input{
+
+    padding-right:55px;
+
+}
+.password-eye{
+
+    position:absolute;
+
+    top:50%;
+
+    right:18px;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    color:#777;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.password-eye:hover{
+
+    color:#8B0000;
+
+}
+
+.login-error{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#fff2f2;
+
+    border-left:4px solid #dc2626;
+
+    color:#991b1b;
+
+    padding:14px 18px;
+
+    border-radius:10px;
+
+    margin-bottom:20px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.login-card button{
+
+    transition:
+
+    background .25s,
+
+    transform .2s;
+
+}
+
+.login-card button:hover{
+
+    transform:translateY(-2px);
+
+}

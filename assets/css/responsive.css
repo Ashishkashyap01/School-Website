@@ -1,0 +1,279 @@
+/* ===================================
+   TABLET
+===================================*/
+
+@media (max-width:1024px){
+
+.nav{
+
+    gap:18px;
+
+}
+
+.logo-text h2{
+
+    font-size:22px;
+
+}
+
+}
+
+/* ===================================
+   MOBILE
+===================================*/
+
+@media (max-width:768px){
+
+.top-bar{
+
+    display:none;
+
+}
+
+.header-inner{
+
+    height:75px;
+
+}
+
+.logo img{
+
+    width:55px;
+
+    height:55px;
+
+}
+
+.logo-text h2{
+
+    font-size:18px;
+
+}
+
+.logo-text p{
+
+    font-size:11px;
+
+}
+
+.menu-toggle{
+
+    display:block;
+
+}
+
+.nav{
+
+    position:fixed;
+
+    top:75px;
+
+    right:-100%;
+
+    width:280px;
+
+    height:calc(100vh - 75px);
+
+    background:#fff;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:0;
+
+    padding:30px;
+
+    transition:.35s;
+
+    box-shadow:-10px 0 30px rgba(0,0,0,.1);
+
+}
+
+.nav.active{
+
+    right:0;
+
+}
+
+.nav a{
+
+    width:100%;
+
+    padding:15px 0;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.apply-btn{
+
+    margin-top:25px;
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+}
+@media(max-width:992px){
+
+.stats-grid{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+}
+
+@media(max-width:576px){
+
+.stats-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+/*=========================================
+ABOUT SECTION
+=========================================*/
+
+@media(max-width:992px){
+
+.about-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.about-center{
+
+order:-1;
+
+}
+
+.facility-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:576px){
+
+.about-left h2{
+
+font-size:32px;
+
+}
+
+.facility-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/*=========================================
+INFO SECTION
+=========================================*/
+
+@media(max-width:992px){
+
+.info-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+@media(max-width:992px){
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+gap:35px;
+
+}
+
+.cta-box{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+}
+/*=========================================
+WELCOME SECTION
+=========================================*/
+
+@media(max-width:992px){
+
+.welcome-grid{
+
+grid-template-columns:1fr;
+
+gap:35px;
+
+}
+
+.welcome-image{
+
+text-align:center;
+
+}
+
+.welcome-image img{
+
+max-width:420px;
+
+height:auto;
+
+margin:auto;
+
+}
+
+.welcome-content{
+
+text-align:center;
+
+}
+
+}
+/*=========================================
+GALLERY
+=========================================*/
+
+@media(max-width:992px){
+
+.gallery-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:576px){
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.section-title h2{
+
+font-size:32px;
+
+}
+
+}

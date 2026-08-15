@@ -1,0 +1,165 @@
+/*=========================================
+IMAGE VIEWER
+=========================================*/
+
+.image-viewer{
+    cursor:pointer;
+    transition:.35s ease;
+}
+
+.image-viewer:hover{
+    transform:scale(1.03);
+    opacity:.95;
+}
+
+/*=========================================
+MODAL
+=========================================*/
+
+.image-viewer-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.92);
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:99999;
+
+    padding:40px;
+
+    animation:fadeIn .25s ease;
+
+}
+
+/*=========================================
+IMAGE
+=========================================*/
+
+.image-viewer-content{
+
+    max-width:92vw;
+
+    max-height:92vh;
+
+    border-radius:14px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.45);
+
+    animation:zoomIn .25s ease;
+
+    object-fit:contain;
+
+}
+
+/*=========================================
+CLOSE BUTTON
+=========================================*/
+
+.image-viewer-close{
+
+    position:absolute;
+
+    top:25px;
+
+    right:35px;
+
+    font-size:45px;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    font-weight:300;
+
+    transition:.25s;
+
+    line-height:1;
+
+}
+
+.image-viewer-close:hover{
+
+    color:#FFD54F;
+
+    transform:rotate(90deg);
+
+}
+
+/*=========================================
+ANIMATION
+=========================================*/
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes zoomIn{
+
+    from{
+
+        transform:scale(.85);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/*=========================================
+MOBILE
+=========================================*/
+
+@media(max-width:768px){
+
+.image-viewer-modal{
+
+    padding:20px;
+
+}
+
+.image-viewer-content{
+
+    max-width:100%;
+
+    max-height:80vh;
+
+}
+
+.image-viewer-close{
+
+    top:15px;
+
+    right:20px;
+
+    font-size:38px;
+
+}
+
+}
