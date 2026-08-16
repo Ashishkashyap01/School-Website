@@ -7,11 +7,11 @@ return [
 
     'port'     => 3306,
 
-    'database' => 'srs_cms',
+    'database' => 'db name',
 
     'username' => 'root',
 
-    'password' => 'Admin@2468',
+    'password' => 'password',
 
     'charset'  => 'utf8mb4',
 
