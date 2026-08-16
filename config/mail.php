@@ -7,16 +7,16 @@ return [
 
     'port' => 587,
 
-    'username' => 'srsdehri2011@gmail.com',
+    'username' => 'mail id',
 
-    'password' => 'shpu efqk aqrc iyin',
+    'password' => 'App Password',
 
     'encryption' => 'tls',
 
-    'from_email' => 'srsdehri2011@gmail.com',
+    'from_email' => 'from email',
 
-    'from_name' => 'Sone Rising School',
+    'from_name' => 'from name',
 
-    'admin_email' => 'srsdehri2011@gmail.com',
+    'admin_email' => 'admin mail',
 
 ];
