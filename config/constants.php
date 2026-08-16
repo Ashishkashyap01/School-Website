@@ -7,7 +7,7 @@ declare(strict_types=1);
 |--------------------------------------------------------------------------
 */
 
-define('APP_NAME', 'Sone Rising School');
+define('APP_NAME', 'School Name');
 define('APP_VERSION', '1.0.0');
 define('APP_ENV', 'development'); // development | production
 
@@ -17,7 +17,7 @@ define('APP_ENV', 'development'); // development | production
 |--------------------------------------------------------------------------
 */
 
-define('SITE_TITLE', 'Sone Rising School');
+define('SITE_TITLE', 'School Name');
 define('SITE_URL', 'http://localhost/srs');
 
 /*
