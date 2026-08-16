@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 return [
-    'app_name' => 'Sone Rising School',
+    'app_name' => 'School Name',
     'version'  => '1.0.0',
     'env'      => 'development',
     'base_url' => '/srs',
